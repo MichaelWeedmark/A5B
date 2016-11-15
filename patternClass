@@ -1,0 +1,38 @@
+public class PatternClass {
+
+	public String intPattern(int number){
+		
+		// Variable declaration
+		String intPattern;
+		String prevPat;
+		
+		if (number <= 0){
+			
+			throw new RuntimeException("error");
+			
+		}
+		
+		if (number == 1){
+			
+			intPattern = " 1 ";
+			
+		} else {
+			
+			prevPat = intPattern(number - 1);
+			
+			if (number > 5){
+				
+				intPattern = prevPat + " " + number + " \n" + prevPat;
+				
+			} else {
+				
+				intPattern = prevPat + " " + number + " " + prevPat;
+				
+			}
+			
+		}
+		
+		return intPattern;
+	}
+	
+}
