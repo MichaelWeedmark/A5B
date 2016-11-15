@@ -1,0 +1,28 @@
+/****************************************************************************
+ *     
+ * Created by Michael Weedmark
+ * Assignment 5b, ICS4U
+ * This program creates an integer pattern from a user's input
+ * 
+ ****************************************************************************/
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+        
+		System.out.print("Please enter a number to generate a pattern from");
+		
+		// Variable declaration
+		Scanner userInput = new Scanner(System.in);
+		int input = userInput.nextInt();
+		
+		PatternClass intPattern = new PatternClass();
+		
+		System.out.println(intPattern.intPattern(input));
+		
+	}
+
+}
+
